@@ -1,26 +1,84 @@
 <style>
-    .inputbox{
-        border-radius: 15px;
+
+.center-logo{
+    margin: 0;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     }
+
+.center-form{
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+
+ul {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+
+    .inputbox{
+        border-radius: 20px;
+        border: 1px solid #b3afaf;
+        line-height: 2.5em;
+        width: 500px;
+    }
+
+    .divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+    
 </style>
 
 <header>
     <ul>
         <li><a href="">About</a></li>
         <li><a href="">Store</a></li>
-        <li><a href="">Gmail</a></li>
-        <li><a href="">Images</a></li>
-        <li><img src="\more.png" alt="More Items" width = 3%></li>
-        <li><button style="background-color: blue; color: white; border-radius: 5px;" type="Sign In">Sign In</button></li>
+        <li style="float: right;"><button  class="header_right"  style="background-color: rgb(26, 115, 232); color: white; border-radius: 5px;" type="Sign In">Sign In</button></li>
+        <li style="float: right;"><a style="padding: 0%;"><img src="\more.png" alt="More Items"></a></li>
+        <li style="float: right;"><a style="float:right;" href="">Images</a></li>
+        <li style="float: right;"><a href="">Gmail</a></li>
+        
+        
+        
     </ul>
 </header>
 
 <body>
-    <p>Live  Now!</p>
-    <img src="\googlelogo.png" alt="Google Logo" width=15%>
-    <form>
-        <input class=inputbox type="text" border-radius: 5px;>
-        <button type="Google Search">Google Search</button>
-        <button type="I'm Feeling Lucky">I'm Feeling Lucky</button>
-    </form>
+    <div class="center-logo">
+    <img style="width:100%" src="\googlelogo.png" alt="Google Logo" > <br><br>
+    </div>
+    <div class="center-form">
+
+        <form>
+            <input class=inputbox type="text"><br><br><br>
+            <button style="margin-left: 25%;" type="Google Search">Google Search</button>
+            <div class="divider"></div>
+            <button type="I'm Feeling Lucky">I'm Feeling Lucky</button>
+        </form>     
+    </div>
+    
+    
 </body>
